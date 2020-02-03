@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces">
+  <columns>
+   <connections preferredWidth="143" />
+   <irq preferredWidth="34" />
+   <export preferredWidth="107" />
+  </columns>
+ </systemtable>
+ <library expandedCategories="Project,Library" />
+ <window width="1896" height="1768" x="1934" y="145" />
+ <generation
+   synthesis="VHDL"
+   block_symbol_file="1"
+   path="_PROJECT_NAME_"
+   testbench_simulation="VHDL" />
+ <hdlexample language="VHDL" />
+</preferences>

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Jan 26 12:04:59 2020
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : LedToggle
+Top-level Entity Name : ledtoggle
+Family : Cyclone IV E
+Total logic elements : 2,018
+    Total combinational functions : 1,770
+    Dedicated logic registers : 1,012
+Total registers : 1012
+Total pins : 6
+Total virtual pins : 0
+Total memory bits : 174,080
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

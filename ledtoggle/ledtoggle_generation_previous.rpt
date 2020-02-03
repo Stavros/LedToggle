@@ -1,0 +1,130 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\Stavros\OneDrive\Documents\IntelFPGA\LedToggle\ledtoggle.qsys --block-symbol-file --output-directory=C:\Users\Stavros\OneDrive\Documents\IntelFPGA\LedToggle\ledtoggle --family="Cyclone IV E" --part=EP4CE6E22C8
+Progress: Loading LedToggle/ledtoggle.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding cpu [altera_nios2_gen2 18.1]
+Progress: Parameterizing module cpu
+Progress: Adding led_pio [altera_avalon_pio 18.1]
+Progress: Parameterizing module led_pio
+Progress: Adding onchip_mem [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module onchip_mem
+Progress: Adding sw_pio [altera_avalon_pio 18.1]
+Progress: Parameterizing module sw_pio
+Progress: Adding sys_clk_timer [altera_avalon_timer 18.1]
+Progress: Parameterizing module sys_clk_timer
+Progress: Adding sysid [altera_avalon_sysid_qsys 18.1]
+Progress: Parameterizing module sysid
+Progress: Adding uart [altera_avalon_uart 18.1]
+Progress: Parameterizing module uart
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: ledtoggle.sw_pio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: ledtoggle.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: ledtoggle.sysid: Time stamp will be automatically updated when this component is generated.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\Stavros\OneDrive\Documents\IntelFPGA\LedToggle\ledtoggle.qsys --synthesis=VHDL --output-directory=C:\Users\Stavros\OneDrive\Documents\IntelFPGA\LedToggle\ledtoggle\synthesis --family="Cyclone IV E" --part=EP4CE6E22C8
+Progress: Loading LedToggle/ledtoggle.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding cpu [altera_nios2_gen2 18.1]
+Progress: Parameterizing module cpu
+Progress: Adding led_pio [altera_avalon_pio 18.1]
+Progress: Parameterizing module led_pio
+Progress: Adding onchip_mem [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module onchip_mem
+Progress: Adding sw_pio [altera_avalon_pio 18.1]
+Progress: Parameterizing module sw_pio
+Progress: Adding sys_clk_timer [altera_avalon_timer 18.1]
+Progress: Parameterizing module sys_clk_timer
+Progress: Adding sysid [altera_avalon_sysid_qsys 18.1]
+Progress: Parameterizing module sysid
+Progress: Adding uart [altera_avalon_uart 18.1]
+Progress: Parameterizing module uart
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: ledtoggle.sw_pio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: ledtoggle.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: ledtoggle.sysid: Time stamp will be automatically updated when this component is generated.
+Info: ledtoggle: Generating ledtoggle "ledtoggle" for QUARTUS_SYNTH
+Info: cpu: "ledtoggle" instantiated altera_nios2_gen2 "cpu"
+Info: led_pio: Starting RTL generation for module 'ledtoggle_led_pio'
+Info: led_pio:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=ledtoggle_led_pio --dir=C:/Users/Stavros/AppData/Local/Temp/alt8286_3654091729289904143.dir/0080_led_pio_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/Stavros/AppData/Local/Temp/alt8286_3654091729289904143.dir/0080_led_pio_gen//ledtoggle_led_pio_component_configuration.pl  --do_build_sim=0  ]
+Info: led_pio: Done RTL generation for module 'ledtoggle_led_pio'
+Info: led_pio: "ledtoggle" instantiated altera_avalon_pio "led_pio"
+Info: onchip_mem: Starting RTL generation for module 'ledtoggle_onchip_mem'
+Info: onchip_mem:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=ledtoggle_onchip_mem --dir=C:/Users/Stavros/AppData/Local/Temp/alt8286_3654091729289904143.dir/0081_onchip_mem_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/Stavros/AppData/Local/Temp/alt8286_3654091729289904143.dir/0081_onchip_mem_gen//ledtoggle_onchip_mem_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_mem: Done RTL generation for module 'ledtoggle_onchip_mem'
+Info: onchip_mem: "ledtoggle" instantiated altera_avalon_onchip_memory2 "onchip_mem"
+Info: sw_pio: Starting RTL generation for module 'ledtoggle_sw_pio'
+Info: sw_pio:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=ledtoggle_sw_pio --dir=C:/Users/Stavros/AppData/Local/Temp/alt8286_3654091729289904143.dir/0082_sw_pio_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/Stavros/AppData/Local/Temp/alt8286_3654091729289904143.dir/0082_sw_pio_gen//ledtoggle_sw_pio_component_configuration.pl  --do_build_sim=0  ]
+Info: sw_pio: Done RTL generation for module 'ledtoggle_sw_pio'
+Info: sw_pio: "ledtoggle" instantiated altera_avalon_pio "sw_pio"
+Info: sys_clk_timer: Starting RTL generation for module 'ledtoggle_sys_clk_timer'
+Info: sys_clk_timer:   Generation command is [exec C:/intelFPGA_lite/18.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/18.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=ledtoggle_sys_clk_timer --dir=C:/Users/Stavros/AppData/Local/Temp/alt8286_3654091729289904143.dir/0083_sys_clk_timer_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/Stavros/AppData/Local/Temp/alt8286_3654091729289904143.dir/0083_sys_clk_timer_gen//ledtoggle_sys_clk_timer_component_configuration.pl  --do_build_sim=0  ]
+Info: sys_clk_timer: Done RTL generation for module 'ledtoggle_sys_clk_timer'
+Info: sys_clk_timer: "ledtoggle" instantiated altera_avalon_timer "sys_clk_timer"
+Info: sysid: "ledtoggle" instantiated altera_avalon_sysid_qsys "sysid"
+Info: uart: Starting RTL generation for module 'ledtoggle_uart'
+Info: uart:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart/generate_rtl.pl --name=ledtoggle_uart --dir=C:/Users/Stavros/AppData/Local/Temp/alt8286_3654091729289904143.dir/0085_uart_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/Stavros/AppData/Local/Temp/alt8286_3654091729289904143.dir/0085_uart_gen//ledtoggle_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: uart: Done RTL generation for module 'ledtoggle_uart'
+Info: uart: "ledtoggle" instantiated altera_avalon_uart "uart"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "ledtoggle" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "ledtoggle" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "ledtoggle" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'ledtoggle_cpu_cpu'
+Info: cpu:   Generation command is [exec C:/intelFPGA_lite/18.1/quartus/bin64//eperlcmd.exe -I C:/intelFPGA_lite/18.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=ledtoggle_cpu_cpu --dir=C:/Users/Stavros/AppData/Local/Temp/alt8286_3654091729289904143.dir/0088_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/18.1/quartus/bin64/ --verilog --config=C:/Users/Stavros/AppData/Local/Temp/alt8286_3654091729289904143.dir/0088_cpu_gen//ledtoggle_cpu_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2020.01.25 13:57:28 (*) Starting Nios II generation
+Info: cpu: # 2020.01.25 13:57:28 (*)   Checking for plaintext license.
+Info: cpu: # 2020.01.25 13:57:30 (*)   Couldn't query license setup in Quartus directory C:/intelFPGA_lite/18.1/quartus/bin64/
+Info: cpu: # 2020.01.25 13:57:30 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2020.01.25 13:57:30 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2020.01.25 13:57:30 (*)   Plaintext license not found.
+Info: cpu: # 2020.01.25 13:57:30 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2020.01.25 13:57:30 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2020.01.25 13:57:30 (*)   Creating all objects for CPU
+Info: cpu: # 2020.01.25 13:57:33 (*)   Generating RTL from CPU objects
+Info: cpu: # 2020.01.25 13:57:33 (*)   Creating plain-text RTL
+Info: cpu: # 2020.01.25 13:57:35 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'ledtoggle_cpu_cpu'
+Info: cpu: "cpu" instantiated altera_nios2_gen2_unit "cpu"
+Info: cpu_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "cpu_data_master_translator"
+Info: sysid_control_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "sysid_control_slave_translator"
+Info: cpu_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "cpu_data_master_agent"
+Info: sysid_control_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "sysid_control_slave_agent"
+Info: sysid_control_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "sysid_control_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: Reusing file C:/Users/Stavros/OneDrive/Documents/IntelFPGA/LedToggle/ledtoggle/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/Stavros/OneDrive/Documents/IntelFPGA/LedToggle/ledtoggle/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file C:/Users/Stavros/OneDrive/Documents/IntelFPGA/LedToggle/ledtoggle/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: ledtoggle: Done "ledtoggle" with 30 modules, 42 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

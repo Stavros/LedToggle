@@ -1,0 +1,63 @@
+#include <system.h>
+#include <altera_avalon_pio_regs.h>
+#include <alt_types.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <sys/alt_irq.h>
+#include <io.h>
+
+void delay(void);
+alt_u8 SW_value;
+
+static void handle_sw_interrupts(void)
+{
+ SW_value = IORD_ALTERA_AVALON_PIO_DATA(SW_PIO_BASE);
+ IOWR_ALTERA_AVALON_PIO_EDGE_CAP(SW_PIO_BASE,0x00);
+}
+
+//SW_PIO
+void init_SW(void)
+{
+ SW_value = 0xff;
+ IOWR_ALTERA_AVALON_PIO_IRQ_MASK(SW_PIO_BASE,0xff);      //PIO
+ IOWR_ALTERA_AVALON_PIO_EDGE_CAP(SW_PIO_BASE,0x00);  //EDGE_REGISTER
+ alt_irq_register(SW_PIO_IRQ,SW_PIO_BASE,handle_sw_interrupts);
+}
+
+int main()
+{
+  alt_u8 timer = 0x00;
+  init_SW();
+  while(1)
+  {
+   if((SW_value) == 0x00)
+   {
+    printf("LED OFF! %d\n",timer);
+    IOWR_ALTERA_AVALON_PIO_DATA(LED_PIO_BASE,0x02);
+    usleep(5000);
+    //delay();
+    timer++;
+   }
+   while((SW_value) == 0x01)
+   {
+    printf("LED ON! %d\n",timer);
+    IOWR_ALTERA_AVALON_PIO_DATA(LED_PIO_BASE,0x03);
+    usleep(5000);
+    //delay();
+    timer++;
+   }
+   printf("LED OFF! %d\n",timer);
+   IOWR_ALTERA_AVALON_PIO_DATA(LED_PIO_BASE,0x02);
+   usleep(5000);
+   //delay();
+   timer++;
+  }
+  return 0;
+}
+
+void delay(void)
+{
+ alt_u32 i=0;
+ while(i<200000)
+  i++;
+}

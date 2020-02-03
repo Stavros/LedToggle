@@ -1,0 +1,24 @@
+#include "sys/alt_stdio.h"
+#include "altera_avalon_pio_regs.h"
+#include "system.h"
+#include <stdio.h>
+
+
+int main(){
+//Endless Loop...
+while(1){
+      //usleep(2000000);
+	//Diavase to pio KAI APOTHIKEYSE TIMH STO User_IN (P55/HD2.3)
+	alt_8 UserIN = IORD_ALTERA_AVALON_PIO_DATA(USERSIG_PIO_BASE);
+	//An to User_IN den einai 0
+	if(UserIN>0){
+		//Anapse to LED 0 apo to LED_PIO pou exoume orisei
+		IOWR_ALTERA_AVALON_PIO_DATA(LED_PIO_BASE,0x1);
+		printf("Button pressed -> Led ON\n");
+	}
+	else{
+		//Alliws Svhse to LED
+		IOWR_ALTERA_AVALON_PIO_DATA(LED_PIO_BASE,0x0);
+	}
+}
+}

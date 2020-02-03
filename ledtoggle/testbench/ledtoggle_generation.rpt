@@ -1,0 +1,345 @@
+Info: Starting: Create testbench Platform Designer system
+Info: C:/Users/Stavros/OneDrive/Documents/IntelFPGA/LedToggle/ledtoggle/testbench/ledtoggle.ipx
+Info: qsys-generate C:\Users\Stavros\OneDrive\Documents\IntelFPGA\LedToggle\ledtoggle.qsys --testbench=STANDARD --output-directory=C:\Users\Stavros\OneDrive\Documents\IntelFPGA\LedToggle --family="Cyclone IV E" --part=EP4CE6E22C8
+Progress: Loading LedToggle/ledtoggle.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding cpu [altera_nios2_gen2 18.1]
+Progress: Parameterizing module cpu
+Progress: Adding led_pio [altera_avalon_pio 18.1]
+Progress: Parameterizing module led_pio
+Progress: Adding onchip_mem [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module onchip_mem
+Progress: Adding sw_pio [altera_avalon_pio 18.1]
+Progress: Parameterizing module sw_pio
+Progress: Adding sys_clk_timer [altera_avalon_timer 18.1]
+Progress: Parameterizing module sys_clk_timer
+Progress: Adding sysid [altera_avalon_sysid_qsys 18.1]
+Progress: Parameterizing module sysid
+Progress: Adding uart [altera_avalon_uart 18.1]
+Progress: Parameterizing module uart
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: ledtoggle.sw_pio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: ledtoggle.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: ledtoggle.sysid: Time stamp will be automatically updated when this component is generated.
+Info: qsys-generate succeeded.
+Info: Loading IP catalog for testbench.
+Progress: 
+Progress: 
+Progress: 
+Progress: (2) searching C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/root_components.ipx (ipx file)
+Info: Reading index C:\intelfpga_lite\18.1\quartus\sopc_builder\bin\root_components.ipx
+Info: C:\intelfpga_lite\18.1\quartus\sopc_builder\bin\root_components.ipx: Loading now from components.ipx
+Info: Reading index C:\intelfpga_lite\18.1\quartus\sopc_builder\bin\ip_component_categories.ipx
+Info: C:\intelfpga_lite\18.1\quartus\sopc_builder\bin\ip_component_categories.ipx described 0 plugins, 0 paths, in 0,01 seconds
+Info: C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/ip_component_categories.ipx matched 1 files in 0,01 seconds
+Info: C:/Users/Stavros/OneDrive/Documents/IntelFPGA/LedToggle/ledtoggle/testbench/ip/**/* matched 0 files in 0,00 seconds
+Info: Reading index C:\Users\Stavros\OneDrive\Documents\IntelFPGA\LedToggle\ledtoggle\testbench\ledtoggle.ipx
+Progress: Loading LedToggle/ledtoggle.qsys
+Info: C:/Users/Stavros/OneDrive/Documents/IntelFPGA/LedToggle/* matched 8 files in 0,01 seconds
+Info: C:/Users/Stavros/OneDrive/Documents/IntelFPGA/LedToggle/ip/**/* matched 0 files in 0,00 seconds
+Info: C:/Users/Stavros/OneDrive/Documents/IntelFPGA/LedToggle/*/* matched 31 files in 0,02 seconds
+Info: C:\Users\Stavros\OneDrive\Documents\IntelFPGA\LedToggle\ledtoggle\testbench\ledtoggle.ipx described 0 plugins, 3 paths, in 0,03 seconds
+Info: C:/Users/Stavros/OneDrive/Documents/IntelFPGA/LedToggle/ledtoggle/testbench/* matched 4 files in 0,03 seconds
+Info: C:/Users/Stavros/OneDrive/Documents/IntelFPGA/LedToggle/ledtoggle/testbench/*/* matched 0 files in 0,00 seconds
+Info: C:/Users/Stavros/.altera.quartus/ip/18.1/**/* matched 0 files in 0,00 seconds
+Info: C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/$$QUARTUS_IP_PROJECTDIR/* matched 0 files in 0,00 seconds
+Info: C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/$$QUARTUS_IP_USERDIR/* matched 0 files in 0,01 seconds
+Info: C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/$$QUARTUS_IP_GLOBALDIR/* matched 0 files in 0,00 seconds
+Info: Reading index C:\intelfpga_lite\18.1\ip\altera\altera_components.ipx
+Info: C:\intelfpga_lite\18.1\ip\altera\altera_components.ipx described 2035 plugins, 0 paths, in 0,41 seconds
+Info: C:/intelfpga_lite/18.1/ip/**/* matched 139 files in 0,42 seconds
+Info: C:/intelfpga_lite/ip/**/* matched 0 files in 0,00 seconds
+Info: Reading index C:\intelfpga_lite\18.1\quartus\sopc_builder\builtin.ipx
+Info: C:\intelfpga_lite\18.1\quartus\sopc_builder\builtin.ipx described 83 plugins, 0 paths, in 0,02 seconds
+Info: C:/intelfpga_lite/18.1/quartus/sopc_builder/**/* matched 8 files in 0,02 seconds
+Info: Reading index C:\intelfpga_lite\18.1\quartus\common\librarian\factories\index.ipx
+Info: C:\intelfpga_lite\18.1\quartus\common\librarian\factories\index.ipx described 151 plugins, 0 paths, in 0,04 seconds
+Info: C:/intelfpga_lite/18.1/quartus/common/librarian/factories/**/* matched 4 files in 0,04 seconds
+Info: C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/$IP_IPX_PATH matched 1 files in 0,00 seconds
+Info: C:\intelfpga_lite\18.1\quartus\sopc_builder\bin\root_components.ipx described 0 plugins, 13 paths, in 0,54 seconds
+Info: C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/root_components.ipx matched 1 files in 0,54 seconds
+Progress: 
+Progress: 
+Progress: 
+Info: Running script C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/tbgen.tcl
+Info: send_message Info TB_Gen: QSYS Testbench Generator Rev: $Revision: #1 $
+Info: TB_Gen: QSYS Testbench Generator Rev: $Revision: #1 $
+Info: get_module_property NAME
+Info: send_message Info TB_Gen: System design is: ledtoggle
+Info: TB_Gen: System design is: ledtoggle
+Info: get_interfaces 
+Info: get_connections 
+Info: get_interface_property clk EXPORT_OF
+Info: get_instance_property clk_0 CLASS_NAME
+Info: get_instance_assignment clk_0 testbench.partner.map.clk_in
+Info: get_interface_property led_pin EXPORT_OF
+Info: get_instance_property led_pio CLASS_NAME
+Info: get_instance_assignment led_pio testbench.partner.map.external_connection
+Info: get_interface_property reset EXPORT_OF
+Info: get_instance_property clk_0 CLASS_NAME
+Info: get_instance_assignment clk_0 testbench.partner.map.clk_in_reset
+Info: get_interface_property sw_pin EXPORT_OF
+Info: get_instance_property sw_pio CLASS_NAME
+Info: get_instance_assignment sw_pio testbench.partner.map.external_connection
+Info: get_interface_property uart_pins EXPORT_OF
+Info: get_instance_property uart CLASS_NAME
+Info: get_instance_assignment uart testbench.partner.map.external_connection
+Info: send_message Info TB_Gen: Creating testbench system : ledtoggle_tb with all standard BFMs
+Info: TB_Gen: Creating testbench system : ledtoggle_tb with all standard BFMs
+Info: create_system ledtoggle_tb
+Info: add_instance ledtoggle_inst ledtoggle 
+Info: set_use_testbench_naming_pattern true ledtoggle
+Info: get_instance_interfaces ledtoggle_inst
+Info: get_instance_interface_property ledtoggle_inst clk CLASS_NAME
+Info: get_instance_interface_property ledtoggle_inst led_pin CLASS_NAME
+Info: get_instance_interface_property ledtoggle_inst reset CLASS_NAME
+Info: get_instance_interface_property ledtoggle_inst sw_pin CLASS_NAME
+Info: get_instance_interface_property ledtoggle_inst uart_pins CLASS_NAME
+Info: get_instance_interface_property ledtoggle_inst clk CLASS_NAME
+Info: send_message Info TB_Gen: clock_sink found: clk
+Info: TB_Gen: clock_sink found: clk
+Info: get_instance_interface_property ledtoggle_inst clk CLASS_NAME
+Info: add_instance ledtoggle_inst_clk_bfm altera_avalon_clock_source 
+Info: get_instance_property ledtoggle_inst_clk_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value ledtoggle_inst clk clockRate
+Info: set_instance_parameter_value ledtoggle_inst_clk_bfm CLOCK_RATE 50000000.0
+Info: set_instance_parameter_value ledtoggle_inst_clk_bfm CLOCK_UNIT 1
+Info: get_instance_property ledtoggle_inst_clk_bfm CLASS_NAME
+Info: get_instance_interface_property ledtoggle_inst clk CLASS_NAME
+Info: get_instance_interfaces ledtoggle_inst_clk_bfm
+Info: get_instance_interface_property ledtoggle_inst_clk_bfm clk CLASS_NAME
+Info: add_connection ledtoggle_inst_clk_bfm.clk ledtoggle_inst.clk
+Info: get_instance_interface_property ledtoggle_inst reset CLASS_NAME
+Info: send_message Info TB_Gen: reset_sink found: reset
+Info: TB_Gen: reset_sink found: reset
+Info: get_instance_interface_property ledtoggle_inst reset CLASS_NAME
+Info: add_instance ledtoggle_inst_reset_bfm altera_avalon_reset_source 
+Info: get_instance_property ledtoggle_inst_reset_bfm CLASS_NAME
+Info: get_instance_interface_ports ledtoggle_inst reset
+Info: get_instance_interface_port_property ledtoggle_inst reset reset_reset_n ROLE
+Info: get_instance_interface_port_property ledtoggle_inst reset reset_reset_n ROLE
+Info: set_instance_parameter_value ledtoggle_inst_reset_bfm ASSERT_HIGH_RESET 0
+Info: set_instance_parameter_value ledtoggle_inst_reset_bfm INITIAL_RESET_CYCLES 50
+Info: get_instance_property ledtoggle_inst_reset_bfm CLASS_NAME
+Info: get_instance_interfaces ledtoggle_inst_reset_bfm
+Info: get_instance_interface_property ledtoggle_inst_reset_bfm clk CLASS_NAME
+Info: get_instance_interface_property ledtoggle_inst_reset_bfm reset CLASS_NAME
+Info: get_instance_property ledtoggle_inst_reset_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value ledtoggle_inst reset associatedClock
+Info: get_instance_interfaces ledtoggle_inst_clk_bfm
+Info: get_instance_interface_property ledtoggle_inst_clk_bfm clk CLASS_NAME
+Info: send_message Warning TB_Gen: ledtoggle_inst_reset_bfm is not associated to any clock; connecting ledtoggle_inst_reset_bfm to 'ledtoggle_inst_clk_bfm.clk'
+Warning: TB_Gen: ledtoggle_inst_reset_bfm is not associated to any clock; connecting ledtoggle_inst_reset_bfm to 'ledtoggle_inst_clk_bfm.clk'
+Info: add_connection ledtoggle_inst_clk_bfm.clk ledtoggle_inst_reset_bfm.clk
+Info: get_instance_interface_property ledtoggle_inst reset CLASS_NAME
+Info: get_instance_interfaces ledtoggle_inst_reset_bfm
+Info: get_instance_interface_property ledtoggle_inst_reset_bfm clk CLASS_NAME
+Info: get_instance_interface_property ledtoggle_inst_reset_bfm reset CLASS_NAME
+Info: add_connection ledtoggle_inst_reset_bfm.reset ledtoggle_inst.reset
+Info: get_instance_interface_property ledtoggle_inst led_pin CLASS_NAME
+Info: send_message Info TB_Gen: conduit_end found: led_pin
+Info: TB_Gen: conduit_end found: led_pin
+Info: get_instance_interface_property ledtoggle_inst led_pin CLASS_NAME
+Info: add_instance ledtoggle_inst_led_pin_bfm altera_conduit_bfm 
+Info: get_instance_property ledtoggle_inst_led_pin_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value ledtoggle_inst led_pin associatedClock
+Info: get_instance_interface_parameter_value ledtoggle_inst led_pin associatedReset
+Info: get_instance_interface_ports ledtoggle_inst led_pin
+Info: get_instance_interface_port_property ledtoggle_inst led_pin led_pin_export ROLE
+Info: get_instance_interface_port_property ledtoggle_inst led_pin led_pin_export WIDTH
+Info: get_instance_interface_port_property ledtoggle_inst led_pin led_pin_export DIRECTION
+Info: set_instance_parameter_value ledtoggle_inst_led_pin_bfm CLOCKED_SIGNAL 0
+Info: set_instance_parameter_value ledtoggle_inst_led_pin_bfm ENABLE_RESET 0
+Info: set_instance_parameter_value ledtoggle_inst_led_pin_bfm SIGNAL_ROLES export
+Info: set_instance_parameter_value ledtoggle_inst_led_pin_bfm SIGNAL_WIDTHS 8
+Info: set_instance_parameter_value ledtoggle_inst_led_pin_bfm SIGNAL_DIRECTIONS input
+Info: get_instance_property ledtoggle_inst_led_pin_bfm CLASS_NAME
+Info: get_instance_interface_property ledtoggle_inst led_pin CLASS_NAME
+Info: get_instance_interfaces ledtoggle_inst_led_pin_bfm
+Info: get_instance_interface_property ledtoggle_inst_led_pin_bfm conduit CLASS_NAME
+Info: add_connection ledtoggle_inst_led_pin_bfm.conduit ledtoggle_inst.led_pin
+Info: get_instance_interface_property ledtoggle_inst sw_pin CLASS_NAME
+Info: send_message Info TB_Gen: conduit_end found: sw_pin
+Info: TB_Gen: conduit_end found: sw_pin
+Info: get_instance_interface_property ledtoggle_inst sw_pin CLASS_NAME
+Info: add_instance ledtoggle_inst_sw_pin_bfm altera_conduit_bfm 
+Info: get_instance_property ledtoggle_inst_sw_pin_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value ledtoggle_inst sw_pin associatedClock
+Info: get_instance_interface_parameter_value ledtoggle_inst sw_pin associatedReset
+Info: get_instance_interface_ports ledtoggle_inst sw_pin
+Info: get_instance_interface_port_property ledtoggle_inst sw_pin sw_pin_export ROLE
+Info: get_instance_interface_port_property ledtoggle_inst sw_pin sw_pin_export WIDTH
+Info: get_instance_interface_port_property ledtoggle_inst sw_pin sw_pin_export DIRECTION
+Info: set_instance_parameter_value ledtoggle_inst_sw_pin_bfm CLOCKED_SIGNAL 0
+Info: set_instance_parameter_value ledtoggle_inst_sw_pin_bfm ENABLE_RESET 0
+Info: set_instance_parameter_value ledtoggle_inst_sw_pin_bfm SIGNAL_ROLES export
+Info: set_instance_parameter_value ledtoggle_inst_sw_pin_bfm SIGNAL_WIDTHS 8
+Info: set_instance_parameter_value ledtoggle_inst_sw_pin_bfm SIGNAL_DIRECTIONS output
+Info: get_instance_property ledtoggle_inst_sw_pin_bfm CLASS_NAME
+Info: get_instance_interface_property ledtoggle_inst sw_pin CLASS_NAME
+Info: get_instance_interfaces ledtoggle_inst_sw_pin_bfm
+Info: get_instance_interface_property ledtoggle_inst_sw_pin_bfm conduit CLASS_NAME
+Info: add_connection ledtoggle_inst_sw_pin_bfm.conduit ledtoggle_inst.sw_pin
+Info: get_instance_interface_property ledtoggle_inst uart_pins CLASS_NAME
+Info: send_message Info TB_Gen: conduit_end found: uart_pins
+Info: TB_Gen: conduit_end found: uart_pins
+Info: get_instance_interface_property ledtoggle_inst uart_pins CLASS_NAME
+Info: add_instance ledtoggle_inst_uart_pins_bfm altera_conduit_bfm 
+Info: get_instance_property ledtoggle_inst_uart_pins_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value ledtoggle_inst uart_pins associatedClock
+Info: get_instance_interface_parameter_value ledtoggle_inst uart_pins associatedReset
+Info: get_instance_interface_ports ledtoggle_inst uart_pins
+Info: get_instance_interface_port_property ledtoggle_inst uart_pins uart_pins_rxd ROLE
+Info: get_instance_interface_port_property ledtoggle_inst uart_pins uart_pins_rxd WIDTH
+Info: get_instance_interface_port_property ledtoggle_inst uart_pins uart_pins_rxd DIRECTION
+Info: get_instance_interface_port_property ledtoggle_inst uart_pins uart_pins_txd ROLE
+Info: get_instance_interface_port_property ledtoggle_inst uart_pins uart_pins_txd WIDTH
+Info: get_instance_interface_port_property ledtoggle_inst uart_pins uart_pins_txd DIRECTION
+Info: set_instance_parameter_value ledtoggle_inst_uart_pins_bfm CLOCKED_SIGNAL 0
+Info: set_instance_parameter_value ledtoggle_inst_uart_pins_bfm ENABLE_RESET 0
+Info: set_instance_parameter_value ledtoggle_inst_uart_pins_bfm SIGNAL_ROLES rxd txd
+Info: set_instance_parameter_value ledtoggle_inst_uart_pins_bfm SIGNAL_WIDTHS 1 1
+Info: set_instance_parameter_value ledtoggle_inst_uart_pins_bfm SIGNAL_DIRECTIONS output input
+Info: get_instance_property ledtoggle_inst_uart_pins_bfm CLASS_NAME
+Info: get_instance_interface_property ledtoggle_inst uart_pins CLASS_NAME
+Info: get_instance_interfaces ledtoggle_inst_uart_pins_bfm
+Info: get_instance_interface_property ledtoggle_inst_uart_pins_bfm conduit CLASS_NAME
+Info: add_connection ledtoggle_inst_uart_pins_bfm.conduit ledtoggle_inst.uart_pins
+Info: send_message Info TB_Gen: Saving testbench system: ledtoggle_tb.qsys
+Info: TB_Gen: Saving testbench system: ledtoggle_tb.qsys
+Info: save_system ledtoggle_tb.qsys
+Info: send_message Info TB_Gen: TBGEN SUCCESSFUL
+Info: TB_Gen: TBGEN SUCCESSFUL
+Info: Testbench system: C:/Users/Stavros/OneDrive/Documents/IntelFPGA/LedToggle/ledtoggle/testbench/ledtoggle_tb.qsys
+Info: Done
+Info: qsys-generate C:\Users\Stavros\OneDrive\Documents\IntelFPGA\LedToggle\ledtoggle.qsys --simulation=VHDL --allow-mixed-language-simulation --testbench=STANDARD --testbench-simulation=VHDL --allow-mixed-language-testbench-simulation --output-directory=C:\Users\Stavros\OneDrive\Documents\IntelFPGA\LedToggle\ledtoggle\testbench\ledtoggle_tb\simulation --family="Cyclone IV E" --part=EP4CE6E22C8
+Progress: Loading testbench/ledtoggle_tb.qsys
+Progress: Reading input file
+Progress: Adding ledtoggle_inst [ledtoggle 1.0]
+Progress: Parameterizing module ledtoggle_inst
+Progress: Adding ledtoggle_inst_clk_bfm [altera_avalon_clock_source 18.1]
+Progress: Parameterizing module ledtoggle_inst_clk_bfm
+Progress: Adding ledtoggle_inst_led_pin_bfm [altera_conduit_bfm 18.1]
+Progress: Parameterizing module ledtoggle_inst_led_pin_bfm
+Progress: Adding ledtoggle_inst_reset_bfm [altera_avalon_reset_source 18.1]
+Progress: Parameterizing module ledtoggle_inst_reset_bfm
+Progress: Adding ledtoggle_inst_sw_pin_bfm [altera_conduit_bfm 18.1]
+Progress: Parameterizing module ledtoggle_inst_sw_pin_bfm
+Progress: Adding ledtoggle_inst_uart_pins_bfm [altera_conduit_bfm 18.1]
+Progress: Parameterizing module ledtoggle_inst_uart_pins_bfm
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: ledtoggle_tb.ledtoggle_inst.sw_pio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: ledtoggle_tb.ledtoggle_inst.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: ledtoggle_tb.ledtoggle_inst.sysid: Time stamp will be automatically updated when this component is generated.
+Info: ledtoggle_tb.ledtoggle_inst_clk_bfm: Elaborate: altera_clock_source
+Info: ledtoggle_tb.ledtoggle_inst_clk_bfm:            $Revision: #1 $
+Info: ledtoggle_tb.ledtoggle_inst_clk_bfm:            $Date: 2018/07/18 $
+Info: ledtoggle_tb.ledtoggle_inst_reset_bfm: Elaborate: altera_reset_source
+Info: ledtoggle_tb.ledtoggle_inst_reset_bfm:            $Revision: #1 $
+Info: ledtoggle_tb.ledtoggle_inst_reset_bfm:            $Date: 2018/07/18 $
+Info: ledtoggle_tb.ledtoggle_inst_reset_bfm: Reset is negatively asserted.
+Info: ledtoggle_tb: Generating ledtoggle_tb "ledtoggle_tb" for SIM_VHDL
+Info: ledtoggle_inst: "ledtoggle_tb" instantiated ledtoggle "ledtoggle_inst"
+Info: ledtoggle_inst_clk_bfm: "ledtoggle_tb" instantiated altera_avalon_clock_source "ledtoggle_inst_clk_bfm"
+Info: ledtoggle_inst_led_pin_bfm: "ledtoggle_tb" instantiated altera_conduit_bfm "ledtoggle_inst_led_pin_bfm"
+Info: ledtoggle_inst_reset_bfm: "ledtoggle_tb" instantiated altera_avalon_reset_source "ledtoggle_inst_reset_bfm"
+Info: ledtoggle_inst_sw_pin_bfm: "ledtoggle_tb" instantiated altera_conduit_bfm "ledtoggle_inst_sw_pin_bfm"
+Info: ledtoggle_inst_uart_pins_bfm: "ledtoggle_tb" instantiated altera_conduit_bfm "ledtoggle_inst_uart_pins_bfm"
+Info: cpu: "ledtoggle_inst" instantiated altera_nios2_gen2 "cpu"
+Info: led_pio: Starting RTL generation for module 'ledtoggle_led_pio'
+Info: led_pio:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=ledtoggle_led_pio --dir=C:/Users/Stavros/AppData/Local/Temp/alt8284_1134439734320905291.dir/0007_led_pio_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --vhdl --config=C:/Users/Stavros/AppData/Local/Temp/alt8284_1134439734320905291.dir/0007_led_pio_gen//ledtoggle_led_pio_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/Stavros/AppData/Local/Temp/alt8284_1134439734320905291.dir/0007_led_pio_gen/  ]
+Info: led_pio: Done RTL generation for module 'ledtoggle_led_pio'
+Info: led_pio: "ledtoggle_inst" instantiated altera_avalon_pio "led_pio"
+Info: onchip_mem: Starting RTL generation for module 'ledtoggle_onchip_mem'
+Info: onchip_mem:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=ledtoggle_onchip_mem --dir=C:/Users/Stavros/AppData/Local/Temp/alt8284_1134439734320905291.dir/0008_onchip_mem_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --vhdl --config=C:/Users/Stavros/AppData/Local/Temp/alt8284_1134439734320905291.dir/0008_onchip_mem_gen//ledtoggle_onchip_mem_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/Stavros/AppData/Local/Temp/alt8284_1134439734320905291.dir/0008_onchip_mem_gen/  ]
+Info: onchip_mem: Done RTL generation for module 'ledtoggle_onchip_mem'
+Info: onchip_mem: "ledtoggle_inst" instantiated altera_avalon_onchip_memory2 "onchip_mem"
+Info: sw_pio: Starting RTL generation for module 'ledtoggle_sw_pio'
+Info: sw_pio:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=ledtoggle_sw_pio --dir=C:/Users/Stavros/AppData/Local/Temp/alt8284_1134439734320905291.dir/0009_sw_pio_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --vhdl --config=C:/Users/Stavros/AppData/Local/Temp/alt8284_1134439734320905291.dir/0009_sw_pio_gen//ledtoggle_sw_pio_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/Stavros/AppData/Local/Temp/alt8284_1134439734320905291.dir/0009_sw_pio_gen/  ]
+Info: sw_pio: Done RTL generation for module 'ledtoggle_sw_pio'
+Info: sw_pio: "ledtoggle_inst" instantiated altera_avalon_pio "sw_pio"
+Info: sys_clk_timer: Starting RTL generation for module 'ledtoggle_sys_clk_timer'
+Info: sys_clk_timer:   Generation command is [exec C:/intelFPGA_lite/18.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/18.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=ledtoggle_sys_clk_timer --dir=C:/Users/Stavros/AppData/Local/Temp/alt8284_1134439734320905291.dir/0010_sys_clk_timer_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --vhdl --config=C:/Users/Stavros/AppData/Local/Temp/alt8284_1134439734320905291.dir/0010_sys_clk_timer_gen//ledtoggle_sys_clk_timer_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/Stavros/AppData/Local/Temp/alt8284_1134439734320905291.dir/0010_sys_clk_timer_gen/  ]
+Info: sys_clk_timer: Done RTL generation for module 'ledtoggle_sys_clk_timer'
+Info: sys_clk_timer: "ledtoggle_inst" instantiated altera_avalon_timer "sys_clk_timer"
+Info: sysid: "ledtoggle_inst" instantiated altera_avalon_sysid_qsys "sysid"
+Info: uart: Starting RTL generation for module 'ledtoggle_uart'
+Info: uart:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart/generate_rtl.pl --name=ledtoggle_uart --dir=C:/Users/Stavros/AppData/Local/Temp/alt8284_1134439734320905291.dir/0012_uart_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --vhdl --config=C:/Users/Stavros/AppData/Local/Temp/alt8284_1134439734320905291.dir/0012_uart_gen//ledtoggle_uart_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/Stavros/AppData/Local/Temp/alt8284_1134439734320905291.dir/0012_uart_gen/  ]
+Info: uart: Done RTL generation for module 'ledtoggle_uart'
+Info: uart: "ledtoggle_inst" instantiated altera_avalon_uart "uart"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "ledtoggle_inst" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "ledtoggle_inst" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "ledtoggle_inst" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'ledtoggle_cpu_cpu'
+Info: cpu:   Generation command is [exec C:/intelFPGA_lite/18.1/quartus/bin64//eperlcmd.exe -I C:/intelFPGA_lite/18.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=ledtoggle_cpu_cpu --dir=C:/Users/Stavros/AppData/Local/Temp/alt8284_1134439734320905291.dir/0015_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/18.1/quartus/bin64/ --verilog --config=C:/Users/Stavros/AppData/Local/Temp/alt8284_1134439734320905291.dir/0015_cpu_gen//ledtoggle_cpu_cpu_processor_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/Stavros/AppData/Local/Temp/alt8284_1134439734320905291.dir/0015_cpu_gen/  ]
+Info: cpu: # 2020.01.23 21:24:08 (*) Starting Nios II generation
+Info: cpu: # 2020.01.23 21:24:08 (*)   Checking for plaintext license.
+Info: cpu: # 2020.01.23 21:24:10 (*)   Couldn't query license setup in Quartus directory C:/intelFPGA_lite/18.1/quartus/bin64/
+Info: cpu: # 2020.01.23 21:24:10 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2020.01.23 21:24:10 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2020.01.23 21:24:10 (*)   Plaintext license not found.
+Info: cpu: # 2020.01.23 21:24:10 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2020.01.23 21:24:10 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2020.01.23 21:24:10 (*)   Creating all objects for CPU
+Info: cpu: # 2020.01.23 21:24:13 (*)   Creating 'C:/Users/Stavros/AppData/Local/Temp/alt8284_1134439734320905291.dir/0015_cpu_gen//ledtoggle_cpu_cpu_nios2_waves.do'
+Info: cpu: # 2020.01.23 21:24:13 (*)   Generating RTL from CPU objects
+Info: cpu: # 2020.01.23 21:24:13 (*)   Creating plain-text RTL
+Info: cpu: # 2020.01.23 21:24:16 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'ledtoggle_cpu_cpu'
+Info: cpu: "cpu" instantiated altera_nios2_gen2_unit "cpu"
+Info: cpu_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "cpu_data_master_translator"
+Info: sysid_control_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "sysid_control_slave_translator"
+Info: cpu_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "cpu_data_master_agent"
+Info: sysid_control_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "sysid_control_slave_agent"
+Info: sysid_control_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "sysid_control_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: Reusing file C:/Users/Stavros/OneDrive/Documents/IntelFPGA/LedToggle/ledtoggle/testbench/ledtoggle_tb/simulation/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/Stavros/OneDrive/Documents/IntelFPGA/LedToggle/ledtoggle/testbench/ledtoggle_tb/simulation/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file C:/Users/Stavros/OneDrive/Documents/IntelFPGA/LedToggle/ledtoggle/testbench/ledtoggle_tb/simulation/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: ledtoggle_tb: Done "ledtoggle_tb" with 36 modules, 59 files
+Info: qsys-generate succeeded.
+Info: sim-script-gen --spd=C:\Users\Stavros\OneDrive\Documents\IntelFPGA\LedToggle\ledtoggle_tb.spd --output-directory=C:/Users/Stavros/OneDrive/Documents/IntelFPGA/LedToggle/ledtoggle/testbench/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=C:\Users\Stavros\OneDrive\Documents\IntelFPGA\LedToggle\ledtoggle_tb.spd --output-directory=C:/Users/Stavros/OneDrive/Documents/IntelFPGA/LedToggle/ledtoggle/testbench/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in C:/Users/Stavros/OneDrive/Documents/IntelFPGA/LedToggle/ledtoggle/testbench/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Skipping VCS script generation since VHDL file $QUARTUS_INSTALL_DIR/eda/sim_lib/altera_syn_attributes.vhd is required for simulation
+Info: Generating the following file(s) for VCSMX simulator in C:/Users/Stavros/OneDrive/Documents/IntelFPGA/LedToggle/ledtoggle/testbench/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in C:/Users/Stavros/OneDrive/Documents/IntelFPGA/LedToggle/ledtoggle/testbench/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	34 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in C:/Users/Stavros/OneDrive/Documents/IntelFPGA/LedToggle/ledtoggle/testbench/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under C:/Users/Stavros/OneDrive/Documents/IntelFPGA/LedToggle/ledtoggle/testbench/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create testbench Platform Designer system

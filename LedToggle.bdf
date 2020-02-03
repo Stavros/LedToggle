@@ -1,0 +1,209 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 168 240 336 256)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "clk" (rect 5 0 19 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 168 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 864 520 912 536))
+)
+(pin
+	(input)
+	(rect 168 360 336 376)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "switch" (rect 5 0 34 17)(font "Intel Clear" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 160 280 336 296)
+	(text "OUTPUT" (rect 137 0 175 10)(font "Arial" (font_size 6)))
+	(text "led" (rect 5 0 19 12)(font "Arial" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 176 8)(pt 124 8))
+		(line (pt 124 4)(pt 98 4))
+		(line (pt 124 12)(pt 98 12))
+		(line (pt 124 12)(pt 124 4))
+		(line (pt 98 4)(pt 94 8))
+		(line (pt 94 8)(pt 98 12))
+		(line (pt 98 12)(pt 94 8))
+	)
+	(flipy)
+	(annotation_block (location)(rect 1408 608 1472 720))
+)
+(symbol
+	(rect 448 176 736 456)
+	(text "ledtoggle" (rect 119 -1 180 15)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 264 25 276)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "clk_clk" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "clk_clk" (rect 4 61 41 75)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 112 72))
+	)
+	(port
+		(pt 0 152)
+		(input)
+		(text "reset_reset_n" (rect 0 0 80 14)(font "Arial" (font_size 8)))
+		(text "reset_reset_n" (rect 4 141 84 155)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 112 152))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "sw_pin_export[7..0]" (rect 0 0 114 14)(font "Arial" (font_size 8)))
+		(text "sw_pin_export[7..0]" (rect 4 181 118 195)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 112 192)(line_width 3))
+	)
+	(port
+		(pt 0 232)
+		(input)
+		(text "uart_pins_rxd" (rect 0 0 79 14)(font "Arial" (font_size 8)))
+		(text "uart_pins_rxd" (rect 4 221 83 235)(font "Arial" (font_size 8)))
+		(line (pt 0 232)(pt 112 232))
+	)
+	(port
+		(pt 0 112)
+		(output)
+		(text "led_pin_export[7..0]" (rect 0 0 112 14)(font "Arial" (font_size 8)))
+		(text "led_pin_export[7..0]" (rect 4 101 116 115)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 112 112)(line_width 3))
+	)
+	(port
+		(pt 0 248)
+		(output)
+		(text "uart_pins_txd" (rect 0 0 77 14)(font "Arial" (font_size 8)))
+		(text "uart_pins_txd" (rect 4 237 81 251)(font "Arial" (font_size 8)))
+		(line (pt 0 248)(pt 112 248))
+	)
+	(drawing
+		(text "clk" (rect 97 43 114 58)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 117 67 131 79)(font "Arial" (color 0 0 0)))
+		(text "led_pin" (rect 71 83 119 98)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 117 107 147 119)(font "Arial" (color 0 0 0)))
+		(text "reset" (rect 83 123 116 138)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset_n" (rect 117 147 153 159)(font "Arial" (color 0 0 0)))
+		(text "sw_pin" (rect 71 163 118 178)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 117 187 147 199)(font "Arial" (color 0 0 0)))
+		(text "uart_pins" (rect 58 203 119 218)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "rxd" (rect 117 227 132 239)(font "Arial" (color 0 0 0)))
+		(text "txd" (rect 117 243 132 255)(font "Arial" (color 0 0 0)))
+		(text " ledtoggle " (rect 248 264 298 276)(font "Arial" ))
+		(line (pt 112 32)(pt 176 32))
+		(line (pt 176 32)(pt 176 264))
+		(line (pt 112 264)(pt 176 264))
+		(line (pt 112 32)(pt 112 264))
+		(line (pt 113 52)(pt 113 76))
+		(line (pt 114 52)(pt 114 76))
+		(line (pt 113 92)(pt 113 116))
+		(line (pt 114 92)(pt 114 116))
+		(line (pt 113 132)(pt 113 156))
+		(line (pt 114 132)(pt 114 156))
+		(line (pt 113 172)(pt 113 196))
+		(line (pt 114 172)(pt 114 196))
+		(line (pt 113 212)(pt 113 252))
+		(line (pt 114 212)(pt 114 252))
+		(line (pt 0 0)(pt 288 0))
+		(line (pt 288 0)(pt 288 280))
+		(line (pt 0 280)(pt 288 280))
+		(line (pt 0 0)(pt 0 280))
+	)
+)
+(symbol
+	(rect 160 304 192 320)
+	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
+	(text "inst2" (rect 3 5 26 17)(font "Arial" )(invisible))
+	(port
+		(pt 16 16)
+		(output)
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(line (pt 16 16)(pt 16 8))
+	)
+	(drawing
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(connector
+	(pt 336 288)
+	(pt 448 288)
+	(bus)
+)
+(connector
+	(pt 448 288)
+	(pt 456 288)
+	(bus)
+)
+(connector
+	(pt 448 248)
+	(pt 456 248)
+)
+(connector
+	(pt 336 248)
+	(pt 448 248)
+)
+(connector
+	(pt 448 368)
+	(pt 456 368)
+)
+(connector
+	(pt 336 368)
+	(pt 448 368)
+)
+(connector
+	(pt 176 328)
+	(pt 176 320)
+)
+(connector
+	(pt 176 328)
+	(pt 448 328)
+)
+(connector
+	(pt 448 328)
+	(pt 464 328)
+)
+(junction (pt 448 248))
+(junction (pt 448 368))
+(junction (pt 448 288))
+(junction (pt 448 328))
+(text "NIOS II" (rect 552 128 593 147)(font "Intel Clear" (font_size 8)))

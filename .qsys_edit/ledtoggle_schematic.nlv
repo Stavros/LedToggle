@@ -1,0 +1,25 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst ledtoggle.sysid -pg 1 -lvl 3 -y 450
+preplace inst ledtoggle.clk_0 -pg 1 -lvl 1 -y 180
+preplace inst ledtoggle.sys_clk_timer -pg 1 -lvl 3 -y 230
+preplace inst ledtoggle.cpu -pg 1 -lvl 2 -y 170
+preplace inst ledtoggle -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst ledtoggle.led_pio -pg 1 -lvl 3 -y 530
+preplace inst ledtoggle.cpu.clock_bridge -pg 1
+preplace inst ledtoggle.cpu.cpu -pg 1
+preplace inst ledtoggle.cpu.reset_bridge -pg 1
+preplace inst ledtoggle.sw_pio -pg 1 -lvl 3 -y 330
+preplace inst ledtoggle.onchip_mem -pg 1 -lvl 3 -y 150
+preplace inst ledtoggle.uart -pg 1 -lvl 3 -y 30
+preplace netloc INTERCONNECT<net_container>ledtoggle</net_container>(SLAVE)uart.s1,(MASTER)cpu.instruction_master,(SLAVE)sysid.control_slave,(SLAVE)led_pio.s1,(SLAVE)cpu.debug_mem_slave,(SLAVE)sw_pio.s1,(SLAVE)sys_clk_timer.s1,(MASTER)cpu.data_master,(SLAVE)onchip_mem.s1) 1 1 2 320 600 680
+preplace netloc EXPORT<net_container>ledtoggle</net_container>(SLAVE)clk_0.clk_in,(SLAVE)ledtoggle.clk) 1 0 1 NJ
+preplace netloc FAN_OUT<net_container>ledtoggle</net_container>(SLAVE)led_pio.reset,(SLAVE)sw_pio.reset,(MASTER)clk_0.clk_reset,(SLAVE)uart.reset,(SLAVE)onchip_mem.reset1,(SLAVE)sys_clk_timer.reset,(SLAVE)cpu.reset,(SLAVE)sysid.reset) 1 1 2 280 580 720
+preplace netloc FAN_OUT<net_container>ledtoggle</net_container>(MASTER)cpu.irq,(SLAVE)sw_pio.irq,(SLAVE)uart.irq,(SLAVE)sys_clk_timer.irq) 1 2 1 740
+preplace netloc EXPORT<net_container>ledtoggle</net_container>(SLAVE)sw_pio.external_connection,(SLAVE)ledtoggle.sw_pin) 1 0 3 NJ 360 NJ 360 NJ
+preplace netloc EXPORT<net_container>ledtoggle</net_container>(SLAVE)ledtoggle.led_pin,(SLAVE)led_pio.external_connection) 1 0 3 NJ 560 NJ 560 NJ
+preplace netloc EXPORT<net_container>ledtoggle</net_container>(SLAVE)uart.external_connection,(SLAVE)ledtoggle.uart_pins) 1 0 3 NJ 60 NJ 60 NJ
+preplace netloc EXPORT<net_container>ledtoggle</net_container>(SLAVE)clk_0.clk_in_reset,(SLAVE)ledtoggle.reset) 1 0 1 NJ
+preplace netloc FAN_OUT<net_container>ledtoggle</net_container>(MASTER)clk_0.clk,(SLAVE)led_pio.clk,(SLAVE)sysid.clk,(SLAVE)onchip_mem.clk1,(SLAVE)cpu.clk,(SLAVE)uart.clk,(SLAVE)sys_clk_timer.clk,(SLAVE)sw_pio.clk) 1 1 2 300 380 700
+levelinfo -pg 1 0 70 960
+levelinfo -hier ledtoggle 80 110 440 800 950
